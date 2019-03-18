@@ -1,17 +1,17 @@
-.nav {
+.nava {
     background: #ae5ee0;
     width: 95%;
-    position: fixed;
+    position: absolute;
     margin-left: 3%
 }
 
-.nav-item {
+.nava-item {
     display: flex;
     margin: 0% 5% 0% 5%;
     padding: 0.5%;
 }
   
-.nav a {
+.nava a {
     color: white;
     font-size: 1.3rem;
     text-decoration: none;

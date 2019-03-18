@@ -46,7 +46,7 @@
     },
     {
         "id": 10,
-        "name": "SCOTT MALKINSON",
+        "name": "S. MALKINSON",
         "image": "./images/scott-malkinson.png"
     },
     {
@@ -128,5 +128,25 @@
         "id": 26,
         "name": "BEBE",
         "image": "./images/bebe-stevens.png"
+    },
+    {
+        "id": 27,
+        "name": "KENNY",
+        "image": "./images/kenny-mccormick.png"
+    },
+    {
+        "id": 28,
+        "name": "KYLE",
+        "image": "./images/kyle-broflovski.png"
+    },
+    {
+        "id": 29,
+        "name": "STAN",
+        "image": "./images/stan-marsh.png"
+    },
+    {
+        "id": 30,
+        "name": "CARTMAN",
+        "image": "./images/eric-cartman.png"
     }
 ]

@@ -1,11 +1,10 @@
 .card {
-    background: #fff;
-    border-radius: 2px;
-    height: 175px;
-    margin: 2%;
-    width: 150px;
+    background: #ae5ee0;
+    width: 175px;
     box-shadow: 0 3px 6px #999, 0 3px 6px #999;
-    float: left;
+    display: inline-block;
+    margin: 2% 3% 2% 3%;
+    position: static;
 }
   
 .card > .img-container {
@@ -14,10 +13,17 @@
 }
 
 .card > .img-container > img {
-    height: 100%;
-    margin-left: -33%;
+    width: 100%;
 }
 
 .char-name {
     text-align: center;
+    font-size: 75%;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 150px;
+    }
 }
