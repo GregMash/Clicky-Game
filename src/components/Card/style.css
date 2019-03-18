@@ -1,0 +1,23 @@
+.card {
+    background: #fff;
+    border-radius: 2px;
+    height: 175px;
+    margin: 2%;
+    width: 150px;
+    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+    float: left;
+}
+  
+.card > .img-container {
+    height: 80%;
+    background:#6CADDC;
+}
+
+.card > .img-container > img {
+    height: 100%;
+    margin-left: -33%;
+}
+
+.char-name {
+    text-align: center;
+}

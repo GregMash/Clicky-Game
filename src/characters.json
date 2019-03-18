@@ -1,0 +1,132 @@
+[
+    {
+        "id": 1,
+        "name": "WENDY",
+        "image": "./images/wendy-testaburger.png"
+    },
+    {
+        "id": 2,
+        "name": "TWEEK",
+        "image": "./images/tweek-tweak.png"
+    },
+    {
+        "id": 3,
+        "name": "TOKEN",
+        "image": "./images/token-black.png"
+    },
+    {
+        "id": 4,
+        "name": "TIMMY",
+        "image": "./images/timmy-burch.png"
+    },
+    {
+        "id": 5,
+        "name": "STUART",
+        "image": "./images/stuart-mccormick.png"
+    },
+    {
+        "id": 6,
+        "name": "STEVEN",
+        "image": "./images/stephen-stotch.png"
+    },
+    {
+        "id": 7,
+        "name": "SHELLY",
+        "image": "./images/shelly-marsh.png"
+    },
+    {
+        "id": 8,
+        "name": "SHEILA",
+        "image": "./images/sheila-broflovski.png"
+    },
+    {
+        "id": 9,
+        "name": "SHARON",
+        "image": "./images/sharon-marsh.png"
+    },
+    {
+        "id": 10,
+        "name": "SCOTT MALKINSON",
+        "image": "./images/scott-malkinson.png"
+    },
+    {
+        "id": 11,
+        "name": "RED",
+        "image": "./images/red.png"
+    },
+    {
+        "id": 12,
+        "name": "RANDY",
+        "image": "./images/randy-marsh.png"
+    },
+    {
+        "id": 13,
+        "name": "NICHOLE",
+        "image": "./images/nichole.png"
+    },
+    {
+        "id": 14,
+        "name": "KENNY'S MOM",
+        "image": "./images/mrsmccormick.png"
+    },
+    {
+        "id": 15,
+        "name": "GRANDPA",
+        "image": "./images/grandpa.png"
+    },
+    {
+        "id": 16,
+        "name": "LINDA",
+        "image": "./images/linda-stotch.png"
+    },
+    {
+        "id": 17,
+        "name": "LIANE",
+        "image": "./images/liane-cartman.png"
+    },
+    {
+        "id": 18,
+        "name": "KAREN",
+        "image": "./images/karen-mccormick.png"
+    },
+    {
+        "id": 19,
+        "name": "JIMMY",
+        "image": "./images/jimmy-valmer.png"
+    },
+    {
+        "id": 20,
+        "name": "JIMBO",
+        "image": "./images/jimbo-kern.png"
+    },
+    {
+        "id": 21,
+        "name": "HEIDI",
+        "image": "./images/heidi-turner.png"
+    },
+    {
+        "id": 22,
+        "name": "GERALD",
+        "image": "./images/gerald-broflovski.png"
+    },
+    {
+        "id": 23,
+        "name": "CRAIG",
+        "image": "./images/craig-tucker.png"
+    },
+    {
+        "id": 24,
+        "name": "CLYDE",
+        "image": "./images/clyde-donovan.png"
+    },
+    {
+        "id": 25,
+        "name": "BUTTERS",
+        "image": "./images/butters-stotch.png"
+    },
+    {
+        "id": 26,
+        "name": "BEBE",
+        "image": "./images/bebe-stevens.png"
+    }
+]
