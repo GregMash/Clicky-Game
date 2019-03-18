@@ -13,58 +13,69 @@ class App extends Component {
     clicked: []
   };
 
-gameOver = (id) => {
-  if (this.state.clicked.includes(id)) {
-    this.handleHighScore();
+
+  shuffleCards = (cards) => {
+    for (let i = cards.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [cards[i], cards[j]] = [cards[j], cards[i]];
+    }
+    return cards;
+  }
+
+  handleHighScore = () => {
+    if (this.state.score >= this.state.highScore) {
+      this.setState({ highScore: this.state.score })
+    }
+  }
+
+  cardClick = (e) => {
     this.shuffleCards(characters);
-    this.setState({ 
-      clicked: [],
-      score: 0,
-      characters: characters
-    });
+    let idClicked = e.target.id;
+    if (this.state.clicked.includes(idClicked)) {
+      this.setState({
+        clicked: [],
+        score: 0,
+        characters: characters
+      });
+    } else {
+      if (this.state.score >= this.state.highScore) {
+        this.setState({
+          score: this.state.score + 1,
+          highScore: this.state.score + 1,
+          characters: characters,
+          clicked: this.state.clicked.concat(idClicked)
+        });
+      } else {
+        this.setState({
+          score: this.state.score + 1,
+          characters: characters,
+          clicked: this.state.clicked.concat(idClicked)
+        });
+      }
+    }
   }
-}
 
-handleScoreIncrement = () => {
-  this.setState({ count: this.state.score + 1 })
-}
 
-shuffleCards = (cards) => {
-  for (let i = cards.length -1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [cards[i], cards[j]] = [cards[j], cards[i]];
-  }
-  return cards;
-}
-
-cardClick = (e) => {
-  this.handleHighScore();
-  this.setState({ count: this.state.score + 1})
-}
-
-handleHighScore = () => {
-  if (this.state.score >= this.state.highScore) {
-    this.setState({highScore: this.state.score})
-  }
-}
-
-render() {
+  render() {
     return (
       <div className="container">
-        <Navbar />
+        <Navbar
+          score={this.state.score}
+          highScore={this.state.highScore}
+        />
         <Jumbotron />
         {this.state.characters.map(character => (
           <Card
-          cardClick={this.cardClick}
-          key={character.id}
-          name={character.name}
-          image={character.image}
-          id={character.id}
+            cardClick={this.cardClick}
+            key={character.id}
+            name={character.name}
+            image={character.image}
+            id={character.id}
           />
         ))}
       </div>
     );
   }
 }
-  
-  export default App;
+
+export default App;
